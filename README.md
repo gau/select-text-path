@@ -2,6 +2,8 @@
 
 エリア内文字、パス上文字のテキストオブジェクトから、テキストパス（文字以外のパス）だけを選択するIllustrator用のスクリプトです。
 
+<div class="fig center" style="margin-bottom: 20px;"><img src="http://www.graphicartsunit.com/saucer/images/select-text-path/eye.png" alt="イメージ" class="noshadow"></div>
+
 -----
 
 ### 更新履歴
@@ -18,17 +20,27 @@
 
 ### インストール方法
 
-1. 右上の「Download ZIP」から圧縮ファイルをダウンロードして解凍します。
-1. 以下の場所に、「テキストパスだけを選択.jsx」をコピーします。Windows版ではお使いのIllustratorのモードによって保存する場所が異なりますのでご注意ください。
-	* 【Mac】/Applications/Adobe Illustrator {バージョン}/Presets/ja_JP/スクリプト/
-	* 【Win32】C:\Program Files\Adobe\Adobe Illustrator {バージョン}\Presets\ja_JP\スクリプト\
-	* 【Win64】C:\Program Files\Adobe\Adobe Illustrator {バージョン} (64 Bit)\Presets\ja_JP\スクリプト\　または　C:\Program Files (x86)\Adobe\Adobe Illustrator {バージョン}\Presets\ja_JP\スクリプト\
-2. Illustratorを再起動します。
-3. `ファイル > スクリプト > テキストパスだけを選択`と表示されていればインストール成功です。
+1. ダウンロードしたファイルを解凍します。
+2. 所定の場所に「テキストパスだけを選択.jsx」をコピーします。Windows版ではお使いのIllustratorの種類によって保存する場所が異なりますのでご注意ください。
+3. Illustratorを再起動します。
+4. `ファイル > スクリプト > テキストパスだけを選択`と表示されていればインストール成功です。
+
+### ファイルをコピーする場所
+
+| OS | バージョン | フォルダの場所 |
+|:-----|:-----|:-----|
+| Mac | 全 | /Applications/Adobe Illustrator *(ver)*/Presets/ja_JP/スクリプト/ |
+| 32bit Win | CS5まで | C:\Program Files\Adobe\Adobe Illustrator *(ver)*\Presets\ja_JP\スクリプト\ |
+| 64bit Win | CS5, CS6（32bit版） | C:\Program Files (x86)\Adobe\Adobe Illustrator *(ver)*\Presets\ja_JP\スクリプト\ |
+| 64bit Win | CS6（64bit版）以降 | C:\Program Files\Adobe\Adobe Illustrator *(ver)* (64 Bit)\Presets\ja_JP\スクリプト\ |
+
+* *(ver)*にはお使いのIllustratorのバージョンが入ります
 
 -----
 
 ### 使い方
+
+<div class="fig center"><img src="http://www.graphicartsunit.com/saucer/images/select-text-path/fig01.png" alt="使い方" class="noshadow"></div>
 
 1. エリア内文字、またはパス上文字のテキストオブジェクトを選択します（複数可）。
 2. `ファイル > スクリプト > テキストパスだけを選択`を選択します。
