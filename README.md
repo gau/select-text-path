@@ -8,6 +8,7 @@
 
 ### 更新履歴
 
+* 0.1.1：グループ内のテキストオブジェクトも対象となるように修正
 * 0.1.0：新規作成（公開）
 
 -----
@@ -21,7 +22,7 @@
 ### インストール方法
 
 1. ダウンロードしたファイルを解凍します。
-2. 所定の場所に「テキストパスだけを選択.jsx」をコピーします。Windows版ではお使いのIllustratorの種類によって保存する場所が異なりますのでご注意ください。
+2. 所定の場所に「テキストパスだけを選択.jsx」をコピーします。
 3. Illustratorを再起動します。
 4. `ファイル > スクリプト > テキストパスだけを選択`と表示されていればインストール成功です。
 
@@ -34,6 +35,7 @@
 | 64bit Win | CS5, CS6（32bit版） | C:\Program Files (x86)\Adobe\Adobe Illustrator *(ver)*\Presets\ja_JP\スクリプト\ |
 | 64bit Win | CS6（64bit版）以降 | C:\Program Files\Adobe\Adobe Illustrator *(ver)* (64 Bit)\Presets\ja_JP\スクリプト\ |
 
+* Windows版ではお使いのIllustratorの種類によって保存する場所が異なります
 * *(ver)*にはお使いのIllustratorのバージョンが入ります
 
 -----

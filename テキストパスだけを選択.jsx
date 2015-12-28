@@ -4,7 +4,7 @@ Copyright (c) 2015 Toshiyuki Takahashi
 Released under the MIT license
 http://opensource.org/licenses/mit-license.php
 http://www.graphicartsunit.com/
-ver. 0.1.0
+ver. 0.1.1
 */
 
 (function() {
@@ -21,7 +21,7 @@ ver. 0.1.0
 
 	// Main Process
 	function mainProcess() {
-		var targetItems = getTagetItems(sel);
+		var targetItems = getTargetItems(sel);
 
 		// Confirm data
 		if(targetItems.length == 0) {
@@ -39,14 +39,18 @@ ver. 0.1.0
 	}
 
 	// Get Target items
-	function getTagetItems(items) {
+	function getTargetItems(items) {
 		var targetItems = [];
-		for (i = 0; i < items.length; i++) {
+		for (var i = 0; i < items.length; i++) {
 			if (items[i].typename == 'TextFrame' && items[i].kind != TextType.POINTTEXT) {
 				targetItems.push(items[i]);
+			} else if(items[i].typename == 'GroupItem') {
+				// var tempItems = getTargetItems(items[i].pageItems);
+				targetItems = targetItems.concat(getTargetItems(items[i].pageItems));
 			} else {
 				try { items[i].selected = false } catch(e) {};
 			}
+			// redraw();
 		}
 		return targetItems;
 	}
